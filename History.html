@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+
+
+
+    <title>Project</title>
+<style>
+
+    /*Large Screen */
+    @media screen and (min-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 10px 10px 10px 10px;}
+    .top {display: grid; grid-template-columns: repeat(3, 1fr); align-items: center;}
+      h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;}
+
+    .top > div > img {width: 900px; height: 130px;margin-left: 105px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; width:100%;}
+
+    #minibody {grid-column: 2/3; width:900px; margin-left: 105px; padding:30px 30px 30px 30px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 40px 40px 40px 40px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+   
+       .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+/*Medium Screen */
+@media screen and (max-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 20px 20px 20px 20px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; max-width: 960px ; height: 130px; border-color: solid thick white; margin-top: 5px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:700px; margin-left: 80px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+      .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; max-width: 800px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+    /*Small Screen */
+@media screen and (max-width: 680px){
+    body {background-color: rgb(83, 83, 182); margin: 5px 5px 5px 5px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; height: 130px; border-color: solid thick white;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:400px; margin-left: 10px;}
+
+    .cards {display: grid; grid-template-columns: repeat(1, 1fr); margin-top: 30px;grid-template-rows: repeat(3, 1fr);}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+    .d-grid > .btn {display:none;}
+   
+    div > img {width: 100%; max-width: 500px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="top">
+      <div><h1>My Estonia</h1></div>
+      <div><img src="images/background.jpg" alt="backgroud image"> </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle d-sm-none d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="main-page.html">Home</a></li>
+          <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+          <li><a class="dropdown-item" href="History.html">History</a></li>
+          <li><a class="dropdown-item" href="Demography.html">Demographics</a></li>
+          <li><a class="dropdown-item" href="culture.html">Culture</a></li>
+          <li><a class="dropdown-item" href="Economy.html">Economy</a></li>
+          <li><a class="dropdown-item" href="Climate.html">Climate</a></li>
+        </ul>
+      </div>
+
+
+
+<div class="body">
+    <div class="d-grid d-gap-2 col-2 justify-content-start">
+      <a class="btn btn-primary" role="button" href="main-page.html">Home</a>
+        <a class="btn btn-primary" role="button" href="overview.html">Overview</a>
+        <a class="btn btn-primary" role="button" href="History.html">History</a>
+        <a class="btn btn-primary" role="button" href="Demography.html">Demographics</a>
+        <a class="btn btn-primary" role="button" href="culture.html" >Culture</a>
+        <a class="btn btn-primary" role="button" href="Economy.html" >Economy</a>
+        <a class="btn btn-primary" role="button" href="Climate.html" >Climate</a>
+    </div>
+   <div id="minibody">
+       <h2>Estonia History</h2>
+       <h3>Estonian history extends across a long and winding road through time, telling the tales of many nations from Vikings to the kings, queens and medieval merchants of German, Swedish, Danish and Russian descent. Estonia's deeply rooted pagan spirit and European mindset means that the country and its people bear close ties with nature while being a proudly independent EU and NATO member state with a growing reputation for innovation. </h3>
+       <div><img src="images/estonia_map.webp" alt="Image of Estonia Climate"> </div>
+      
+       <h2>The history begins with ancient settlers</h2>
+       <a>Shortly after the end of Ice Age in Europe, the first Estonian ancestors settled along the Baltic coast in 9000 B.C. By 800 A.D. traditional Estonian villages and village society had already formed. Many villages established in this era are still inhabited today.
+        The most striking example of the culture of ancient Estonians is the rhythmic verse, as well as the aural tradition of folk song where each line is repeated several times with thematic variations. These days you can explore the remains of this culture on the island of Kihnu and the Setu border region in southwestern Estonia. Estonians have one of the biggest collections of folk songs in the world, with written records of about 133,000 folk songs.
+        Nature spirituality is equally and deeply embedded in the cultural history of Estonian people, in which the trees and earth are cherished objects that possess power. Forest has always been the source of life in this region and it was believed to be a sacred place in Estonia's primeval religion, with the ancestors of modern Estonians worshipping wood spirits.</a>
+        
+        <div><img src="images/estonialandscape.jpg" alt="Image of Estonia Climate"> </div>
+        <h2>Estonian Vikings</h2>
+        <a>800-1200 A.D. was a period of raids and counter-raids by Vikings around the Baltic Sea, including by Estonian Vikings. By this time, the inhabitants of Estonia's largest island of Saaremaa, known at the time as Oeselians, had formed considerable naval force. The most famous event of the time was when when Estonians kidnapped the Norwegian Queen Astrid and her son and future King, Olaf Trygvesson. At the beginning of 12th century they sacked and destroyed Sigtuna, then capital of Sweden. Even today, Saaremaa is rich of Viking-age treasures, mostly containing silver coins and bars.</a>
+        
+        <div><img src="images/naturalfeatures.jpg" alt="Image of Estonia Climate"> </div>
+        <h3>Medieval heyday</h3>
+        <a>By 13th century Estonia was confronted by, and subsequently converted to, Christianity and ruled by Teutonic Order and Danes. During this time is when the Germans became landed gentry and wielded huge influence over Estonia for the next 700 years. Territory known as Estonia and Latvia then became Medieval Livonia - a loosely tied group of small states included in the German ecclesiastical states of the Holy Roman Empire.
+        Tallinn, Estonia's medieval pearl, was granted Lübeck city rights by the Danish king in 1248, under which Estonia's capital and many other local towns were governed until the end of the 19th century. This was the time when Estonia's main towns Tallinn, Tartu, Pärnu and Viljandi were official members of the prosperous Hanseatic League, a commercial and defensive confederation of merchant guilds and their market towns, dominating the Baltic maritime trade along Northern Europe. If today you were to take a walk in Tallinn Old Town and look up you will see what used to be salt, tea and flour warehouses equipped with attic doors and hooks once used to pull up the cargo.</a>
+        <a>Soon enough the country's thriving medieval economy caught the attention of the neighbouring kingdoms looking to expand their geographical influence, and by the 18th century, Estonia had been governed by the king of Denmark, Sweden and the Russian tsar.
+         This time also saw the founding of University of Tartu by the Swedish king Gustav II Adolf, an institution that later played an important part in Estonia's national awakening, as here is where the blue, black and white tricolour was consecrated, becoming the official flag of the independent Republic of Estonia in 1918.</a>
+
+         <div><img src="images/estonialandscape2.jpg" alt="Image of Estonia Climate"> </div>
+         <h3>Modern Estonia</h3>
+         <a>The Republic of Estonia has been an independent state since 1918, shortly interrupted by the half a century long Soviet occupation following the World War II. Estonia restored its independence in 1991, known as The Singing Revolution that was inspired by the more than century-old song festival tradition.
+        Today's Estonia is a thriving and forward-looking member state of EU and NATO, where you can vote online and start your own business in less than half an hour. Many have done so already, including the founders of Skype and Wise.</a>
+
+
+        
+
+        
+      
+      
+      
+        <div id="footer">
+        <div id="Name">Contact Us...</div>
+        <div id="Course">We are committed to serve you better always</div>
+        <div id="date">Visit us today</div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
