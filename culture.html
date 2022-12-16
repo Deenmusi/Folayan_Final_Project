@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+
+
+
+    <title>Project</title>
+<style>
+
+    /*Large Screen */
+    @media screen and (min-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 10px 10px 10px 10px;}
+    .top {display: grid; grid-template-columns: repeat(3, 1fr); align-items: center;}
+      h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;}
+
+    .top > div > img {width: 900px; height: 130px;margin-left: 105px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; width:100%;}
+
+    #minibody {grid-column: 2/3; width:900px; margin-left: 105px; padding:30px 30px 30px 30px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 40px 40px 40px 40px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+   
+       .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+/*Medium Screen */
+@media screen and (max-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 20px 20px 20px 20px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; max-width: 960px ; height: 130px; border-color: solid thick white; margin-top: 5px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:700px; margin-left: 80px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+      .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; max-width: 800px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+    /*Small Screen */
+@media screen and (max-width: 680px){
+    body {background-color: rgb(83, 83, 182); margin: 5px 5px 5px 5px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; height: 130px; border-color: solid thick white;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:400px; margin-left: 10px;}
+
+    .cards {display: grid; grid-template-columns: repeat(1, 1fr); margin-top: 30px;grid-template-rows: repeat(3, 1fr);}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+    .d-grid > .btn {display:none;}
+   
+    div > img {width: 100%; max-width: 500px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="top">
+      <div><h1>My Estonia</h1></div>
+      <div><img src="images/background.jpg" alt="backgroud image"> </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle d-sm-none d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="main-page.html">Home</a></li>
+          <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+          <li><a class="dropdown-item" href="History.html">History</a></li>
+          <li><a class="dropdown-item" href="Demography.html">Demographics</a></li>
+          <li><a class="dropdown-item" href="culture.html">Culture</a></li>
+          <li><a class="dropdown-item" href="Economy.html">Economy</a></li>
+          <li><a class="dropdown-item" href="Climate.html">Climate</a></li>
+        </ul>
+      </div>
+
+
+
+<div class="body">
+    <div class="d-grid d-gap-2 col-2 justify-content-start">
+      <a class="btn btn-primary" role="button" href="main-page.html">Home</a>
+        <a class="btn btn-primary" role="button" href="overview.html">Overview</a>
+        <a class="btn btn-primary" role="button" href="History.html">History</a>
+        <a class="btn btn-primary" role="button" href="Demography.html">Demographics</a>
+        <a class="btn btn-primary" role="button" href="culture.html" >Culture</a>
+        <a class="btn btn-primary" role="button" href="Economy.html" >Economy</a>
+        <a class="btn btn-primary" role="button" href="Climate.html" >Climate</a>
+    </div>
+   <div id="minibody">
+       <h2>Estonian Rich Culture</h2>
+       <h3>Situated between Eastern and Western Europe on the map, Estonia is also a border zone, or more accurately a crossing point, in terms of culture. In the traditions of these parts, one can find elements originating from the East as well as the West, but the Estonians mostly consider themselves a Northern people and conceptually bound to Scandinavia. Marginal and border cultures are where one can find the most interesting phenomena and combinations. In this regard, Estonia is a country of dozens of possibilities. </h3>
+       <div><img src="images/culture.png" alt="Image of Estonia Climate"> </div>
+
+       <h2>Interesting facts about Estonia Culture</h2>
+       <ol>
+       <li>Estonian language belongs to the Finno-Ugric language family, which also includes Finnish and Hungarian.</li>
+       <li>Ernest Hemingway has written that in every port in the world, at least one Estonian can be found. (This speaks volumes about the nation's enterprising spirit.)</li>
+       <li>Despite its small population there are about one hundred different nationalities and ethnic groups represented in Estonia.</li>
+       <li>Estonian Song Festivals have been held every five years for the past 130 years. The joint choir of the General Song Festival has the biggest number of singers in the world.</li>
+       <li>Estonians have one of the biggest collections of folk songs in the world, with written records of 133,000 folk songs.</li>
+       <li>Tallinn 2011 – for a year the Estonian capital city held the title of European Capital of Culture.</li>
+       <li>The first daily newspaper was published in Tallinn as early as in 1675 (in England – 1702).</li>
+       <li>Estonia is egalitarian – 51% of engineers and scientists are women (European Union average being 29%).</li>
+       <li>The Estonian sense of humour is dark and very self-ironic reminiscent of English and Finnish humour. You can clearly see that in Estonian absurd-prone animations.</li>
+       <li>There were many literate people in Estonia already in the 1850s – approximately 80% of the population. This figure exceeded almost all of the grand European civilised nations, the only equal ones being French and German.</li>
+
+       </ol>
+       <div><img src="images/cultureimage.jpg" alt="Image of Estonia Climate"> </div>
+       <a>The Estonian people have a diverse heritage and unique traditions can be found across the country, from the capital of Tallinn, to the islands of Muhu, Saaremaa and Kihnu, the culture capital of Tartu, the shores of Lake Peipsi, and Seto Kingdom in the southeastern corner. One of three countries that make up the Baltic states (along with Latvia and Lithuania) Estonia is located in Northern Europe along the Baltic Sea.
+
+        Estonia is a Baltic state and former part of the Soviet Union, located on the Baltic Sea and the Gulf of Finland. Its terrain is diverse--the country is more than half-covered in forests and has more than 1,500 islands and 1,400 lakes.
+        
+        The skyline of Tallinn, Estonia's capital, is speared by the steeples of churches ranging from that of 13th century St. Olav's and the 20th century onion-domed Russian Orthodox Alexander Nevsky cathedral. The outskirts of the medieval center encompass the inspiring Song Festival Grounds as well as the grim former Patarei Prison.
+        
+        Through the stories below, People Are Culture offers readers insight into travel in Estonia, the best experiences of Estonian culture and the personal stories of Estonian people from across the country.
+
+        The Estonian natural environment is influenced by the low population density (around 30 inhabitants per square km), its proximity to the Baltic Sea and its position between the Eastern and Central European bio-geographical area. That means there is a borderline of occurrence for many species and types of landscapes here. Bogs, meadows, forests, and little lakes offer the opportunity to experience silence and pristine nature. Furthermore, Estonia has more than 1,500 charming islands: the largest are Saaremaa, Hiiumaa and Muhu.</a>
+
+        <div><img src="images/cultural.jpg" alt="Image of Estonia Climate"> </div>
+
+        <a>The city of Tartu in Estonia is often referred to as its "Culture Capital", with Tallinn being the political and financial epicenter. Tartu is 116 miles southeast of Tallinn and the country's second largest city. It's a beautiful, historic, and highly walkable place that is home to two cultural gems, the nation's oldest and most respected university and an excellent museum that pays homage to the powerful role of song in Estonia's identity. Spending time at both of these landmarks provides meaningful context for appreciating the development of Estonia's rich culture.
+
+            In what became known as the “Singing Revolution,” residents of this Baltic state wielded a long-held cultural practice as a weapon of change, without a drop of blood spilled. Over the four years between 1987 and 1991, hundreds of thousands of Estonians gathered publicly in a series of spontaneous events to sing prohibited patriotic songs, risking their lives to proclaim their desire for independence from the Soviet Union, culminating in a choral event that close to one-third of the country’s citizens attended.
+            
+            Expressing their national identity through song has been an Estonian tradition for as long as memory serves — the Estonian Literature Museum contains more than 1.5 million pages of folk songs and there are continual competitions and festivals around the country. The country’s “choir culture” is flourishing, with music continuing to serve as the force that unites Estonians as they enter the third decade of their fledgling democracy.
+            
+            Estonia is a window into how one small country moved from living in fear under a totalitarian system to an environment of such openness that today it is known as one of the most “wired” nations in the world.</a>
+      
+            <div><img src="images/culturaleventcalendar.PNG" alt="Image of Estonia Climate"> </div>
+      
+        <div id="footer">
+        <div id="Name">Contact Us...</div>
+        <div id="Course">We are committed to serve you better always</div>
+        <div id="date">Visit us today</div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
