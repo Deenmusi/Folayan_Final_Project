@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+
+
+
+    <title>Project</title>
+<style>
+
+    /*Large Screen */
+    @media screen and (min-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 10px 10px 10px 10px;}
+    .top {display: grid; grid-template-columns: repeat(3, 1fr); align-items: center;}
+      h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;}
+
+    .top > div > img {width: 900px; height: 130px;margin-left: 105px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; width:100%;}
+
+    #minibody {grid-column: 2/3; width:900px; margin-left: 105px; padding:30px 30px 30px 30px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 40px 40px 40px 40px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+   
+       .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+       h3 {margin-top: 30px; }
+    #footer {
+        
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+/*Medium Screen */
+@media screen and (max-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 20px 20px 20px 20px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; max-width: 960px ; height: 130px; border-color: solid thick white; margin-top: 5px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:700px; margin-left: 80px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+      .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+       div > img {width: 100%; max-width: 800px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+       h3 {margin-top: 30px; }
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+    /*Small Screen */
+@media screen and (max-width: 680px){
+    body {background-color: rgb(83, 83, 182); margin: 5px 5px 5px 5px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; height: 130px; border-color: solid thick white;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:400px; margin-left: 10px;}
+
+    .cards {display: grid; grid-template-columns: repeat(1, 1fr); margin-top: 30px;grid-template-rows: repeat(3, 1fr);}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+    .d-grid > .btn {display:none;}
+   
+    div > img {width: 100%; max-width: 500px; margin-top: 50px; margin-bottom: 50px;}
+       h2 {color: blue; margin-bottom: 30px; border:solid thick red; text-align: center;}
+       h3 {font-size:1rem; margin-top: 20px; color:blueviolet;}
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="top">
+      <div><h1>My Estonia</h1></div>
+      <div><img src="images/background.jpg" alt="backgroud image"> </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle d-sm-none d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="main-page.html">Home</a></li>
+          <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+          <li><a class="dropdown-item" href="History.html">History</a></li>
+          <li><a class="dropdown-item" href="Demography.html">Demographics</a></li>
+          <li><a class="dropdown-item" href="culture.html">Culture</a></li>
+          <li><a class="dropdown-item" href="Economy.html">Economy</a></li>
+          <li><a class="dropdown-item" href="Climate.html">Climate</a></li>
+        </ul>
+      </div>
+
+
+
+<div class="body">
+    <div class="d-grid d-gap-2 col-2 justify-content-start">
+      <a class="btn btn-primary" role="button" href="main-page.html">Home</a>
+        <a class="btn btn-primary" role="button" href="overview.html">Overview</a>
+        <a class="btn btn-primary" role="button" href="History.html">History</a>
+        <a class="btn btn-primary" role="button" href="Demography.html">Demographics</a>
+        <a class="btn btn-primary" role="button" href="culture.html" >Culture</a>
+        <a class="btn btn-primary" role="button" href="Economy.html" >Economy</a>
+        <a class="btn btn-primary" role="button" href="Climate.html" >Climate</a>
+    </div>
+   <div id="minibody">
+       <h2>Major Macro Economic Indicators</h2>
+        <div><img src="images/economicindicator.PNG" alt="Image of Estonia Climate"> </div>
+
+       <h2>Strengths</h2>
+       <ul>
+        <li>Membership in the Eurozone (2011) and OECD (2010)</li>
+        <li>Close commercial, financial and cultural links with Scandinavia</li>
+        <li>Near self-sufficiency in energy thanks to oil shale</li>
+        <li>Development of high value-added sectors (electronics, IT services)</li>
+        <li>Flexibility of economic policy</li>
+        <li>Traditionally, external accounts in surplus and low indebtedness</li>
+        <li>Digitization of administrative procedures</li>
+       </ul>
+       <h2>Weakness</h2>
+       <ul>
+        <li>Small open economy sensitive to external shocks</li>
+        <li>Declining labour force and shortage of skilled labour Lack of land links with the rest of the EU</li>
+        <li>Income inequalities and persistent poverty, especially in the predominantly Russian-speaking eastern regions</li>
+        <li>Need for stronger anti-money laundering measures highlighted by the IMF</li>
+       </ul>
+
+       <h2>Weakness</h2>
+       <h3>Slowdown in 2022 after a year of strong growth </h3>
+       <a>After experiencing one of the fastest growth rates in the EU in 2021, the Estonian economy will slow in 2022, while maintaining a strong pace. Household consumption (49% of GDP in 2020) benefited from the easing of health measures and grew in 2021. It is expected to remain the main driver of growth in 2022, due to savings accumulated during the pandemic and changes to the pension system that allow savings to be withdrawn at any time from September 2021 onwards. Although the labour market is expected to improve in 2022, the high unemployment rate – 6.9% in 2021 – could be a drag on consumption, which is also constrained by high prices for energy and food (12.5% and 29% of the consumption basket, respectively). Electricity prices, which were up about 75% year-on-year in September 2021, have pushed inflation to a record 6.6% and are expected to keep it high in 2022. However, the government has reduced the fees payable by energy suppliers and is assisting low-income households until March 2022. In addition, growth will be driven by increased public spending as part of the 2022-2025 budget strategy to combat the impact of the pandemic in the medium-term. Public investments, such as those earmarked to upgrade and expand rail infrastructure, will benefit from EUR 969 million in grants (about 3.3% of GDP) under the NextGenerationEU stimulus package and the Recovery and Resilience Facility. To meet demand, companies will need to invest to increase their capacity, mainly in the manufacturing sector (13% of GDP). Growth in fixed investment (19% of GDP in 2021) has been driven by Volkswagen's continued investment in its new subsidiary Car.Software Estonia AS (computer software development services and intellectual property products). Although tourism has only partially recovered due to continuing health restrictions, services (transport, logistics, biotechnology and financial services), which account for about 62.5% of Estonia's GDP and employ about 68% of the workforce, are also set to attract investment. Strong external demand for telephones, petroleum products, wood, components for construction, and measurement equipment should boost exports (71% of GDP in 2021). Trade in services will be particularly brisk thanks to the ICT sector (nearly 10% of GDP).</a>
+       
+       <h3>Low deficits and a small debt burden</h3>
+       <a>The public deficit is expected to shrink further in 2022, remaining below the European target of 3%. However, the government plans to increase current spending (wages and pensions) and capital spending (80% of the National Recovery and Resilience Plan), thereby increasing the public debt, which will nevertheless remain well below the European average.
+ 
+        <h3>Government instability linked to coalition changes</h3>
+        <a>A corruption scandal involving his party forced centrist Prime Minister Jüri Ratas and his three-party coalition government formed in 2019 (Centre Party, the conservative Pro Patria/Isamaa Party, and the far-right nationalists of the Conservative People's Party, EKRE) to resign in January 2021. A new coalition government, consisting of the same centrist party and the liberal, centre-right Reform Party of new Prime Minister Kaja Kallas, took office the same month. The new government has expressed its desire to restore the country's image (which has been damaged by EKRE's anti-European, anti-U.S., xenophobic and homophobic outbursts) and to fight money laundering from Eastern Europe. Alar Karis, the only candidate put forward by the bipartisan coalition, was elected to the presidency, a ceremonial position, in August 2021 by the parliament. He was supported by Isamaa and the Social Democratic Party (SDE), with EKRE choosing to abstain.
+ 
+        Divisions between the Estonian majority and the Russian minority remain a source of internal and external political tensions. These overlap in part with other tensions between the cities that are benefiting from digitalisation and rural areas that feel left behind.</a>
+       
+        Economic growth is forecast to stall in 2022 at  0.1%, after a robust expansion. In the first half of the year, gross fixed capital formation reflected the unwinding of some large foreign intangible investments initiated in late 2021, while construction activity slowed in the wake of higher prices and supply bottlenecks. On the upside, households continued spending their savings accumulated during the pandemic-related lockdowns and augmented by the withdrawal of second-pillar pension assets. However, consumption is expected to recede in the second half of 2022, as purchasing power falls due to the surge in consumer price inflation. While the global trade slowdown caused by Russia’s war of aggression against Ukraine has dragged down exports of goods, imports were kept elevated by the need to build up stocks. Exports of services have continued rising this year, after the strong 2021 performance. With imports of services falling sharply, due to the foreign disinvestment, net exports are forecast to provide a positive growth impulse in 2022.
+
+       As Estonia’s flexible economy reacted early to the surge in energy prices, it is also expected to adapt quickly to their stabilisation and eventual decline. Real GDP is forecast to increase to 0.7% in 2023 – supported by all demand components, including a robust fiscal stimulus – and to pick up to 2.1% in 2024. Private consumption is projected to increase in parallel with rising real disposable incomes. Investment is set to rebound in 2023 and to further expand in 2024, despite tightening financial conditions, thanks to the previously accumulated corporate savings. Investment in equipment is expected to pick up strongly, in a drive to diversify to less energy-intensive manufacturing. Construction activity is expected to focus on infrastructure projects, also supported by EU funds, while residential construction is forecast to be held back by softer demand for new dwellings, due to relatively high house prices and less favourable mortgage rates.
+
+
+<h3>The economic engine started sputtering </h3>
+<a>Foreign trade is forecast to contribute positively to output growth in 2023-24, with lower firms’ demand for imported inputs and exports of services continuing to perform very well, particularly in information technologies and in transport and logistics.</a>
+      
+<h3>Labour market stays tight</h3>
+<a>Employment is forecast to expand sizeably in 2022 as past GDP growth translated into job openings. The resulting labour market tightness fuelled robust wage rises, although still below inflation. It also stimulated an increase in the labour force, already swelled by the inflow of people fleeing the war in Ukraine. The unemployment rate is thus estimated to rise to 6.1% this year and 6.6% in 2023, before falling again in 2024. Wages are still expected to grow strongly in 2023, driven by the public sector, and more moderately in 2024.</a>
+    
+<h3>Inflation falling rapidy from the 2022 peak</h3>
+<a>Consumer price inflation is projected to have peaked in the summer at 25.2% and to start declining in the fourth quarter of 2022, thanks to newly introduced measures capping retail electricity prices and limiting the increase in gas and heating prices from October 2022 until 2026. Overall, HICP inflation is forecast to reach 19.3% this year. With prices of oil and non-energy commodities, as well as of imported foodstuffs, already below their peak and not expected to rise again in the forecast horizon, headline inflation is projected at 6.6% in 2023 and 2.6% in 2024. Core inflation, however, is set to slow down less quickly, as firms pass persistently higher input costs onto final prices.</a>
+
+<h3>An expansionary budget adds to the 2023 deficit</h3>
+<a>The general government deficit is forecast to reach 2.3% in 2022, a similar level to 2021. Tax revenue is projected to grow by about 12% in 2022 compared to the previous year, buttressed by the strong labour market and an inflation-related boost for VAT revenue, while consumption is still buoyant. However, expenditure growth is set to be likewise high, reflecting spending on measures to mitigate the impact of high energy prices (around 0.9% of GDP), defence, integration of people fleeing the war in Ukraine and social benefits.
+ 
+    The deficit is forecast to increase markedly to 3.7% of GDP in 2023, as revenues are projected to be negatively impacted by the slowing economy and by the increase in the tax-free allowance in personal income tax. At the same time, expenditure is set to rise as a share of GDP, due to the announced substantial wage increases for many public employees (teachers, internal security), as well as to plans to spend more on defence, education and child benefits. These expenditure measures are expected to be permanent. The deficit is projected to decrease only gradually to 3.3% of GDP in 2024, when economic activity is set to pick up.
+    
+    Public debt is expected to increase from 17.6% of GDP in 2021 to 21.9% in 2024, still the lowest ratio in the EU.</a>
+
+
+
+<div id="footer">
+        <div id="Name">Contact Us...</div>
+        <div id="Course">We are committed to serve you better always</div>
+        <div id="date">Visit us today</div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
