@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+    crossorigin="anonymous"></script>
+
+
+
+    <title>Project</title>
+<style>
+
+    /*Large Screen */
+    @media screen and (min-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 10px 10px 10px 10px;}
+    .top {display: grid; grid-template-columns: repeat(3, 1fr); align-items: center;}
+      h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 2rem;}
+
+    .top > div > img {width: 900px; height: 130px;margin-left: 105px;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px; width:100%;}
+
+    #minibody {grid-column: 2/3; width:900px; margin-left: 105px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 40px 40px 40px 40px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+   
+       .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+/*Medium Screen */
+@media screen and (max-width: 1000px){
+    body {background-color: rgb(83, 83, 182); margin: 20px 20px 20px 20px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; height: 130px; border-color: solid thick white;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:700px; margin-left: 80px;}
+
+    .cards {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 30px;}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+      .d-grid {align-content: flex-start;}
+       .d-grid > a {text-align: center;}
+   
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+    /*Small Screen */
+@media screen and (max-width: 680px){
+    body {background-color: rgb(83, 83, 182); margin: 5px 5px 5px 5px;}
+    .top {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+    h1 {text-decoration: underline; grid-column: 1/1; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 3rem; text-align: center;}
+
+    .top > div > img {width: 100%; height: 130px; border-color: solid thick white;}
+   
+    .body {display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 60px;}
+
+    #minibody {grid-column: 2/3; width:400px; margin-left: 10px;}
+
+    .cards {display: grid; grid-template-columns: repeat(1, 1fr); margin-top: 30px;grid-template-rows: repeat(3, 1fr);}
+
+    #widgetsec {display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(2, 1fr);}
+
+    .Location > div > img  {height:200px; width:300px; margin-left: 30px;}
+
+    .body > div {margin-left: 30px;}
+
+    .card {margin-right: 10px;}
+
+    #minibody {background-color: white;}
+    .Location {align-items: center; text-align: center;}
+    .Weather {align-items: center; text-align: center; }
+
+    .Weather > button {align-self: center; background-color: aqua; color: black; padding: 20px 20px 20px 20px;}
+    .Weather > div {margin-top: 60px;}
+
+    .btn {background-color: rgb(240, 189, 176); color: black; font-size: 1rem;}
+    .card-title {color:blue}
+
+    .d-grid > .btn {display:none;}
+   
+
+    #footer {
+        font-size: 0.75em;
+        width:100%;
+        font-family: sans-serif;
+        background-color: rgb(28, 13, 228);
+        clear: both;
+        color: white;
+        padding: 10px 10px;
+        overflow: auto; 
+      }
+
+      #Name {
+        width: 30%;
+        float: left;
+      }
+
+      #date {
+        width: 30%;
+        float: left;
+        text-align: right;
+      }
+      #Course {
+        width: 30%;
+        float: left;
+        text-align: center;
+      }
+
+    }
+
+
+
+</style>
+
+
+</head>
+<body>
+    <div class="top">
+      <div><h1 href="main-page.html">My Estonia</h1></div>
+      <div><img src="images/background.jpg" alt="backgroud image"> </div>
+    </div>
+
+    <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle d-sm-none d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </a>
+      
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="overview.html">Overview</a></li>
+          <li><a class="dropdown-item" href="History.html">History</a></li>
+          <li><a class="dropdown-item" href="Demography.html">Demographics</a></li>
+          <li><a class="dropdown-item" href="culture.html">Culture</a></li>
+          <li><a class="dropdown-item" href="Economy.html">Economy</a></li>
+          <li><a class="dropdown-item" href="Climate.html">Climate</a></li>
+        </ul>
+      </div>
+
+
+
+<div class="body">
+    <div class="d-grid d-gap-2 col-2 justify-content-start">
+        <a class="btn btn-primary" role="button" href="overview.html">Overview</a>
+        <a class="btn btn-primary" role="button" href="History.html">History</a>
+        <a class="btn btn-primary" role="button" href="Demography.html">Demographics</a>
+        <a class="btn btn-primary" role="button" href="culture.html" >Culture</a>
+        <a class="btn btn-primary" role="button" href="Economy.html" >Economy</a>
+        <a class="btn btn-primary" role="button" href="Climate.html" >Climate</a>
+    </div>
+   <div id="minibody">
+       <div id="widgetsec">
+       <div class="Location">
+          <div><h2>Location</h2></div>
+          <div><img src="images/estonia_map.webp" alt="Estonia image"> </div>
+       </div>
+       
+
+       <div class="Weather">
+         <div><h2>Weather</h2></div>
+         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">Widget</button>
+       </div>
+     </div>
+
+       <div class="cards">
+
+        <div class="card" style="width: auto;">
+            <img src="images/importantcity.jpg" class="card-img-top" alt="image of Estonia important city">
+            <div class="card-body">
+              <h5 class="card-title">Explore More..</h5>
+              <p class="card-text">Estonia is a Baltic country that lies between Latvia and Russia. A country that covers 45,338 square kilometers.</p>
+              <a href="#" class="btn btn-primary">Important Cities</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: auto;">
+            <img src="images/naturalfeatures.jpg" class="card-img-top" alt="ImGE of naturalfeatures">
+            <div class="card-body">
+              <h5 class="card-title">Explore More..</h5>
+              <p class="card-text">Estonia… what a perfect place for nature lovers. More than 18% of the country’s land and 30% of sea landmarks </p>
+              <a href="#" class="btn btn-primary">Natural Features</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: auto;">
+            <img src="images/famousestonians.jpg" class="card-img-top" alt="image of famous estonians">
+            <div class="card-body">
+              <h5 class="card-title">Explore More..</h5>
+              <p class="card-text">In 2017, Arvo Pärt was named the world's most performed living composer for the sixth year running. </p>
+              <a href="#" class="btn btn-primary">Famous Estonians</a>
+            </div>
+        </div>
+
+       </div>
+
+       <div id="footer">
+        <div id="Name">Contact Us...</div>
+        <div id="Course">We are committed to serve you better always</div>
+        <div id="date">Visit us today</div>
+      </div>
+
+   </div>
+</div>
+
+
+
+</body>
+</html>
